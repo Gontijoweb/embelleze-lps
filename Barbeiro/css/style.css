@@ -5,7 +5,7 @@
     --dark-color: #000000;
     --light-color: #F1ECE6;
     --dark-gray: #595A5C;
-    --light-gray: #c2c2c2;
+    --light-gray: #707070;
     --success-color: #269988;
     --error-color: #992926;
     --main-gradient: linear-gradient(83deg, #FF5300 0, #712182 75%, #712182 100%);
@@ -129,6 +129,7 @@ img {
     text-transform: uppercase;
     padding: 16px 60px;
     height: 56px;
+    border: none;
 }
 
 .btn:hover {
@@ -264,7 +265,7 @@ img {
 }
 
 .pra-quem-topico-texto {
-    grid-column: 2/6;
+    grid-column: 2/7;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -332,4 +333,120 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center
+}
+
+.depoimento-video {
+    padding: 32px 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-color);
+    width: 100%;
+    max-width: 1366px;
+}
+
+footer h1,
+footer p {
+    color: #ffffff;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    border-top: var(--light-gray) 2px solid;
+    padding: 24px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-titulo {
+    display: flex;
+    flex-direction: column;
+    max-width: 440px;
+    width: 100%;
+    margin-right: 80px;
+    margin-top: 80px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 440px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.footer-form input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 6px;
+    border: 1px solid var(--light-gray);
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.footer-form input::placeholder {
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.footer-form select {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 6px;
+    border: 1px solid var(--light-gray);
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 600;
+
+    
+    -webkit-appearance: none; /* For WebKit browsers */
+    -moz-appearance: none;    /* For Mozilla browsers */
+    appearance: none;         /* Standard property */
+
+ 
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.footer-form h4 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 6px;
+    padding-left: 16px;
+}
+
+.footer-form button {
+    font-family: inherit;
+    max-width: 370px;
+    padding: 16px 30px !important;
+    margin-top: 24px;
 }
