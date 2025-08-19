@@ -54,6 +54,11 @@ img {
     height: auto;
 }
 
+iframe {
+    width: 640px;
+    height: 360px;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -144,6 +149,10 @@ img {
     top: -28px;
 }
 
+.short-text {
+    display: none;
+}
+
 .showcase {
     display: flex;
     flex-direction: column;
@@ -178,6 +187,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90vw;
+    max-width: 1088px;
     z-index: 10;
     position: absolute;
     bottom: -80px;
@@ -192,6 +203,13 @@ img {
     align-items: start;
     justify-content: space-between;
     margin-bottom: 56px;
+}
+
+.intro-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 
 .aprender {
@@ -213,10 +231,6 @@ img {
     margin-top: 20px;
     margin-bottom: 35px;
 }
-
-/* .aprender-box {
-    width: 260px;
-} */
 
 .aprender-texto {
     text-align: center;
@@ -289,6 +303,27 @@ img {
     color: #ffffff;
 }
 
+.formacao h1 {
+    margin-right: 50px;
+}
+
+.formacao p {
+    max-width: 445px;
+}
+
+.formacao-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.formacao-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .formacao-box {
     display: flex;
     flex-direction: column;
@@ -335,7 +370,8 @@ img {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    text-align: center;
 }
 
 .depoimento-video {
@@ -369,6 +405,11 @@ footer h4 {
     flex-direction: column;
     align-items: center;
     max-width: 900px;
+}
+
+.footer-titulo-form {
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-logo {
@@ -455,7 +496,267 @@ footer h4 {
     cursor: pointer;
 }
 
+.mobile {
+    display: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .btn {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .showcase {
+        justify-content: start;
+        position: relative;
+        height: auto;
+        width: 100vw;
+        margin-bottom: 80px;
+    }
+
+    .barra-logo {
+        position: relative;
+    }
+
+    .showcase-img {
+        position: relative;
+    }
+
+    .showcase-conteudo {    
+        position: relative;
+        bottom: 0;
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .showcase-conteudo div{        
+        align-items: center;
+        margin-bottom: 10px;
+        max-width: 80%;
+    }
+
+    .showcase-conteudo a {
+        position: absolute;
+        bottom: -28px;
+        align-self: center;
+    }
+
+    .showcase h1 {
+        font-size: 32px;
+    }
+    
+    .intro-conteudo {
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .intro-conteudo>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro-conteudo h1, .intro-conteudo h3 {
+        text-align: center;
+    }
+
+    .sobre-conteudo {
+        align-items: normal;
+    }
+
+    .sobre-conteudo h1, .sobre-conteudo h3 {
+        text-align: center;
+    }
 
 }
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .btn {
+        padding: 16px 30px;
+    }
+
+    .container {
+        max-width: 80vw;
+    }
+
+    .showcase h1 {
+        font-size: 24px;
+    }
+
+    .showcase-conteudo img {
+        max-width: 130px;
+    }
+
+    .aprender-boxes {
+        grid-template-columns: repeat(2, 1fr);        
+    }
+
+    .formacao-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formacao-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .formacao h1 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .formacao p {
+        max-width: 100%;
+    }
+
+    .pra-quem-conteudo {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .footer-titulo {
+        margin-right: 0;
+        margin-top: 40px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-titulo-form {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .footer-conteudo {
+        max-width: 100%;
+    }
+
+    .footer-form {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+
+    .footer-form button {
+        align-self: center;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img{
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 660px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    iframe {
+        width: 80vw;
+    }
+
+    .mb-20 {
+        margin-bottom: 10px;
+    }
+
+    .mb-50 {
+        margin-bottom: 25px;
+    }
+
+    .container {
+        max-width: 80vw;
+    }
+
+    .short-text {
+        display: inline;
+    }
+
+    .full-text {
+        display: none;
+    }
+
+    .showcase h1 {
+        font-size: 20px;
+    }
+
+    .showcase-conteudo img {
+        max-width: 110px;
+    }
+
+    .formacao-box-icone {
+        max-width: 84px;
+        max-height: 84px;
+        margin-bottom: 10px;
+    }
+
+    .formacao-box-texto {
+        font-size: 15px;
+    }
+
+    .aprender-boxes {
+        gap: 10px;
+        row-gap: 15px;
+    }
+
+    .aprender-texto {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {    
+    h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 320px;
+    }
+
+    .barra-logo img {
+        max-width: 165px;
+    }
+
+    .showcase h1 {
+        font-size: 15px;
+    }
+
+    .aprender-box img {
+        max-width: 154px;
+
+    }
+
+    .footer-logo img {
+        max-width: 200px;
+    }
+}
+

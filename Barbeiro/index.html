@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <title>Instituto Embelleze</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,9 +20,9 @@
             <div class="showcase-img">
                 <img src="imgs/banner.jpg" alt="Imagem de banner">
             </div>
-            <div class="showcase-conteudo container">
+            <div class="showcase-conteudo">
                 <div>
-                    <h1>
+                    <h1 class="mr-20">
                         QUER SE TORNAR UM PROFISSIONAL ALTAMENTE REQUISITADO E TER A RENDA DOS SONHOS?
                     </h1>
                     <img src="imgs/selo-certificado.png" alt="Certificado reconhecido">
@@ -31,10 +36,11 @@
 
     <section class="container mb-50">
         <div class="flex-row space-between">
-            <div class="flex-column space-between mr-20">               
+            <div class="intro-conteudo">               
                 <div>
                     <h3 class="mb-20">BARBEIRO PROFISSIONAL</h3>
                     <h1 class="mb-20">Aprenda com quem forma os melhores Barbeiros do Brasil</h1>
+                    <img class="mobile mb-20" src="imgs/foto-01m.jpg" alt="Foto 01">
                     <p class="mb-20">
                         A maior escola de beleza da América Latina está pronta para tornar o seu sonho realidade! 
                     </p>
@@ -48,8 +54,8 @@
                 <a href="#rodape" class="btn" style="max-width: 445px;">
                     QUERO ME INSCREVER
                 </a>
-            </div>
-            <img src="imgs/foto-01.jpg" alt="Foto 01">
+            </div>            
+            <img class="desktop" src="imgs/foto-01.jpg" alt="Foto 01" width="536">            
         </div>
     </section>
 
@@ -114,12 +120,13 @@
         <div class="container">
             <div class="flex-column align-center relative ">
                 <a href="#rodape" class="btn btn-mid">
-                    EU QUERO UMA FORMAÇÃO COMPLETA
+                    <span class="full-text">EU QUERO UMA FORMAÇÃO COMPLETA</span>
+                    <span class="short-text">QUERO SABER MAIS</span>                    
                 </a>
             </div>
             
             <div class="pra-quem-conteudo">
-                <img src="imgs/foto-02.jpg" alt="Foto 02">
+                <img class="desktop" src="imgs/foto-02.jpg" alt="Foto 02">
                 <div class="pra-quem-topicos">
                     <div class="pra-quem-topico-texto">
                         <h3>PARA QUEM É</h3>
@@ -151,11 +158,11 @@
 
     <section class="formacao">
         <div class="container align-center">
-            <div class="flex-row align-center mb-20">
-                <h1 class="mr-50">FORMAÇÃO IDEAL<br>PARA O SUCESSO</h1>
-                <p style="max-width: 445px;">É a formação ideal para quem quer transformar habilidade em renda, com liberdade e sucesso profissional.</p>
+            <div class="formacao-conteudo">
+                <h1>FORMAÇÃO IDEAL<br>PARA O SUCESSO</h1>
+                <p>É a formação ideal para quem quer transformar habilidade em renda, com liberdade e sucesso profissional.</p>
             </div>
-            <div class="flex-row space-between">
+            <div class="formacao-boxes">
                 <div class="formacao-box">
                     <div class="formacao-box-icone">
                         <img src="imgs/alunos.png" alt="Alunos">                    
@@ -196,12 +203,14 @@
         <div class="container">
             <div class="flex-column align-center relative ">
                 <a href="#rodape" class="btn btn-mid">
-                    QUERO FAZER PARTE DA PRÓXIMA TURMA
+                    <span class="full-text">QUERO FAZER PARTE DA PRÓXIMA TURMA</span>
+                    <span class="short-text">QUERO ME INSCREVER</span>                    
                 </a>
             </div>
             <div class="sobre-conteudo">
                 <h3>SOBRE O</h3>
                 <h1 class="mb-20">INSTITUTO EMBELLEZE</h1>
+                <img src="imgs/foto-03m.jpg" alt="Foto 03" class="mobile mb-20">
                 <div class="flex-row space-between">
                     <div class="mr-20">
                         <p class="mb-20">O Instituto Embelleze é a maior rede de escolas de beleza da América Latina.</p>
@@ -209,7 +218,7 @@
                         <p class="mb-20"> Aqui, teoria e prática caminham juntas desde o primeiro dia, sempre com foco no que o mercado realmente exige.</p>
                         <p class="mb-20"> Hoje, o Instituto Embelleze está presente em todo o Brasil e em outros países, como Estados Unidos e Costa Rica, levando nosso método de ensino e nossa visão de transformação pessoal e profissional para todos.</p>
                     </div>
-                    <img src="imgs/foto-03.jpg" alt="Foto 03">
+                    <img class="desktop" src="imgs/foto-03.jpg" alt="Foto 03">
                 </div>
             </div>
         </div>
@@ -221,7 +230,7 @@
                 <h3>CONFIRA CASOS REAIS DE</h3>
                 <h1>TRANSFORMAÇÃO DE VIDAS</h1>
                 <div class="depoimento-video">
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/fEyXlvkSgXg?si=C4VPDL6egcCYOdvp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/fEyXlvkSgXg?si=C4VPDL6egcCYOdvp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -230,7 +239,7 @@
     <footer id="rodape">
         <div class="container align-center">
             <div class="footer-conteudo">
-                <div class="flex-row">
+                <div class="footer-titulo-form">
                     <div class="footer-titulo">
                         <h1 class="mb-20">Comece sua transformação agora!</h1>
                         <p>Preencha seus dados para receber mais informações sobre o curso de Barbeiro Profissional e tirar todas as suas dúvidas com a nossa equipe.</p>
