@@ -6,7 +6,7 @@ window.addEventListener('scroll', checkAnim)
 checkAnim()
 
 function checkAnim () {
-    const triggerBottom = window.innerHeight / 5 * 4
+    const triggerBottom = window.innerHeight / 4 * 4
 
     animDireita.forEach(anim => {
         const animTop = anim.getBoundingClientRect().top
