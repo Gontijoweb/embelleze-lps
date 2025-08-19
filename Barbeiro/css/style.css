@@ -453,8 +453,8 @@ footer h4 {
 
 .footer-form input::placeholder {
     font-family: inherit;
-    font-weight: 500;
-    color: var(--dark-color);
+    font-weight: 600;
+    color: var(--light-gray);
 }
 
 .footer-form select {
@@ -464,18 +464,16 @@ footer h4 {
     border: 1px solid var(--light-gray);
     font-size: 14px;
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 600; 
 
-    
     -webkit-appearance: none; /* For WebKit browsers */
     -moz-appearance: none;    /* For Mozilla browsers */
     appearance: none;         /* Standard property */
-
  
     background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
-    background-size: 20px;
+    background-size: 30px;
     cursor: pointer;
 }
 
@@ -498,6 +496,46 @@ footer h4 {
 
 .mobile {
     display: none;
+}
+
+/* Animations */
+.rolagem-direita {
+    animation: animDireita 1s ease-in-out;
+}
+
+.anim-direita {
+    opacity: 0;
+}
+
+.anim-esquerda {
+    opacity: 0;
+}
+
+
+.rolagem-esquerda {
+    animation: animEsquerda 1s ease-in-out;
+}
+
+@keyframes animDireita {
+    from { 
+        opacity: 0;
+        transform: translateX(100%); 
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+@keyframes animEsquerda {
+    from { 
+        opacity: 0;
+        transform: translateX(-100%); 
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* Responsive Styles */
